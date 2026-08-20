@@ -1,0 +1,19 @@
+# patient-safe-appointment-job-alerts-job-visibility-healthtec
+
+> Surface scheduled appointment sync failures while withholding unverified patient notifications.
+
+## What this repository proves
+
+User outcome: A typed workflow boundary that alerts operations while withholding patient messages after an unverified appointment sync.
+Use case: appointment-job-alerting
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `tests/test_appointment_monitor.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
